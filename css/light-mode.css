@@ -1,12 +1,29 @@
 body { 
-    background-color: #d6d2da; 
-    background-image: url("../images/type.jpg");
-    background-size:100%;
-    padding:50px;
-    padding-left: 100px;
+    background-color: #ececf1; 
+    background-image: url("../images/marble2.jpg");
+    background-repeat: no-repeat;
+    padding-top: 10px;
     color: #000000; 
     text-align: center; 
 } 
+
+#theme-toggle{
+    display: true; 
+    background-color: #7c7c793b;
+    color: #000000;
+
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    -o-border-radius: 10;
+    border-radius: 10px;
+
+    margin:10px;
+    position: absolute;
+    right: 10px;
+    top: 5px; 
+    border: 0px; 
+
+}
     
 .container { 
     display: flex; 
@@ -16,9 +33,12 @@ body {
     
 .heading { 
     margin-bottom: 20px; 
+    padding :10px;
     font-size: 3rem; 
-    color: black; 
-    font-family:fantasy;
+    border: 3px solid;
+    background-color: #50504d2d;
+    color: #000000; 
+    font-family:none;
 } 
     
 .header { 
@@ -26,9 +46,10 @@ body {
     align-items: center; 
 } 
     
-.timer, #errors, #accuracy, 
+#timer, #errors, #accuracy, 
   #cpm, #wpm { 
-    background-color: #f3f5e993;
+    background-color: #7c7c793b;
+    color: #000000;
     height: 60px;
     width: 70px;
     margin: 10px;
@@ -57,7 +78,8 @@ body {
 } 
     
 #quote { 
-    background-color: #dbd82793;
+    background-color: #7c7c793b;
+    color: #000000;
     font-size: 1.5rem;
     margin: 8px;
     padding: 20px;
@@ -71,12 +93,10 @@ body {
     width: 400px;
     vertical-align: middle;
     text-align: center;
-    
-    /* box-shadow: black 5px 8px 5px;  */
 } 
     
 #input_area { 
-    background-color: #dbdbd7c0; 
+    background-color: #8f8f8cc0; 
     height: 80px; 
     width: 50%; 
     
@@ -98,9 +118,10 @@ body {
     margin: 10px;
 }
 
-#start_btn { 
+#start_btn, #stop_btn, #restart_btn{ 
     display: true; 
-    background-color: #dbd82793; 
+    background-color: #7c7c793b;
+    color: #000000;
 
     -webkit-border-radius: 10;
     -moz-border-radius: 10;
@@ -111,44 +132,15 @@ body {
     margin:10px;
     padding: 10px; 
     border: 0px; 
-}
 
-#stop_btn { 
-    display: true; 
-    background-color: #dbd82793; 
-
-    -webkit-border-radius: 10;
-    -moz-border-radius: 10;
-    -o-border-radius: 10;
-    border-radius: 10px;
-
-    font-size: 1.5rem; 
-    margin:10px;
-    padding: 10px; 
-    border: 0px; 
-}
-
-#restart_btn { 
-    display: true; 
-    background-color: #dbd82793; 
-
-    -webkit-border-radius: 10;
-    -moz-border-radius: 10;
-    -o-border-radius: 10;
-    border-radius: 10px;
-
-    font-size: 1.5rem; 
-    margin:10px;
-    padding: 10px; 
-    border: 0px; 
-    /* box-shadow: black 5px 8px 5px;  */
+    box-shadow: black 5px 8px 5px; 
 } 
     
 .incorrect_char { 
-    color: red; 
+    color: #d85d5d; 
     text-decoration: underline; 
 } 
     
-  .correct_char { 
-    color: darkgreen; 
+.correct_char { 
+    color: #7fd1a1; 
 } 
