@@ -38,12 +38,19 @@ function selectDifficulty() {
   switch (level) {
     case "easy":
         quotes_array = [
-        "the earth goes round the sun.",
+        "the earth goes around the sun.",
         "i like coffee.",
         "mary likes tea.",
         "i have a pet dog.",
         "she is my best friend.",
         "i love my family.",
+        "my best friend is sarah.",
+        "i love my family.",
+        "do not forget to wear a mask.",
+        "love yourself.",
+        "eat lots of ice cream.",
+        "carpe diem.",
+        "stay hydrated!"
       ];
       break;
 
