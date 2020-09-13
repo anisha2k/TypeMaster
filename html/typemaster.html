@@ -3,67 +3,77 @@
 <head> 
     <meta charset="UTF-8">
     <title>Type Master</title> 
-    <link rel="stylesheet" href="css/TMcss.css"> 
+    <link id="theme" rel="stylesheet" type= "text/css" href="css/light-theme.css"> 
 </head> 
-<body> 
+<body>
   <div class="container"> 
+    <button id="theme-toggle">Switch to dark mode</button>
     <div class="heading"> 
-      Fastest Finger First!
+      FASTEST FINGER FIRST
     </div> 
+
+    <!-- declaring the header with wpm, cpm, errors, timer and accuracy -->
     <div class="header"> 
+
+      <!-- words per minute -->
       <div id="wpm"> 
         <div class="header_text">WPM</div> 
         <div id="curr_wpm">100</div> 
       </div> 
+
+      <!-- count per minute -->
       <div id="cpm"> 
         <div class="header_text">CPM</div> 
         <div id="curr_cpm">100</div> 
       </div> 
+
       <div id="errors"> 
         <div class="header_text">Errors</div> 
         <div id="curr_errors">0</div> 
       </div> 
-      <div class="timer"> 
+
+      <div id="timer"> 
         <div class="header_text">Time</div> 
         <div id="curr_time">60s</div> 
       </div> 
+
       <div id="accuracy"> 
         <div class="header_text">% Accuracy</div> 
         <div id="curr_accuracy">100</div> 
       </div> 
     </div> 
-  
+    
+    <!-- display area for the instructions and the quotes to type -->
     <div id="quote"> 
       Who’s the Usain Bolt of keyboards? 
-      Click below to find out!! 
+      Click below in the input box to find out!! 
     </div> 
+
+    <!-- input text area -->
     <textarea id="input_area"
       placeholder="start typing here..."
       oninput="processCurrentText()"
       onfocus="startGame()"> 
     </textarea>
 
+    <!-- buttons for restart, start and stop -->
     <div class=button_disp>
-     <button id="start_btn"
-       onclick="resetValues()"> 
+     <button id="start_btn" onclick="resetValues(); selectDifficulty()" > 
        Restart 
       </button> 
 
-      <button id="restart_btn"
-       onclick="setValues()"> 
+      <button id="restart_btn" onclick="setValues(); selectDifficulty()"> 
        Start 
       </button>
       
-      <button id="stop_btn"
-      onclick="stopValues()"> 
+      <button id="stop_btn" onclick="stopValues()"> 
       Stop
       </button>
-      
     </div>
   </div> 
   
-  <!-- link the JavaScript file here -->
-  <script src="TMjs.js"> 
-  </script> 
+  <!-- link of the JavaScript -->
+  <script src="TMjs.js"> </script> 
+  
 </body> 
 </html> 
