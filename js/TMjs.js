@@ -21,7 +21,6 @@ let TIME_LIMIT = 60;
 
 // define quotes to be used
 let quotes_array = [
-  "default",
   "Push yourself, because no one else is going to do it for you.",
   "Failure is the condiment that gives success its flavor.",
   "Wake up with determination. Go to bed with satisfaction.",
@@ -38,38 +37,35 @@ function selectDifficulty() {
   //switch case to display the quotes according to difficulty level selected
   switch (level) {
     case "easy":
-      quotes_array = [
-        "easy",
-        "Push yourself, because no one else is going to do it for you.",
-        "Failure is the condiment that gives success its flavor.",
-        "Wake up with determination. Go to bed with satisfaction.",
-        "It's going to be hard, but hard does not mean impossible.",
-        "Learning never exhausts the mind.",
-        "The only way to do great work is to love what you do.",
+        quotes_array = [
+        "the earth goes round the sun.",
+        "i like coffee.",
+        "mary likes tea.",
+        "i have a pet dog.",
+        "she is my best friend.",
+        "i love my family.",
       ];
       break;
 
     case "medium":
       quotes_array = [
-        "medium",
-        "Push yourself, because no one else is going to do it for you.",
-        "Failure is the condiment that gives success its flavor.",
-        "Wake up with determination. Go to bed with satisfaction.",
-        "It's going to be hard, but hard does not mean impossible.",
-        "Learning never exhausts the mind.",
-        "The only way to do great work is to love what you do.",
+        "The quick brown fox jumps over the lazy dog.",
+        "My favourite televison show is Masterchef Austraila.",
+        "I always fail to wake up on time and as a result I am always late too lass.",
+        "Corona virus has resulted in the worsening of our country's econnomy.",
+        "Always be focused and never loose hope.",
+        "Dream big and never settle for anything less.",
       ];
       break;
 
     case "difficult":
       quotes_array = [
-        "difficult",
-        "Push yourself, because no one else is going to do it for you.",
-        "Failure is the condiment that gives success its flavor.",
-        "Wake up with determination. Go to bed with satisfaction.",
-        "It's going to be hard, but hard does not mean impossible.",
-        "Learning never exhausts the mind.",
-        "The only way to do great work is to love what you do.",
+        "When do you think they will get back from their adventure in Cairo, Egypt?",
+        "Hector quizzed Mr. Vexife for two hours, but he was unable to get any information.",
+        "Please take your dog, Cali, out for a walk – he really needs some exercise!",
+        "What a beautiful day it is on the beach, here in beautiful and sunny Hawaii.",
+        " Trixie and Veronica, our two cats, just love to play with their pink ball of yarn.",
+        "Rex Quinfrey, a renowned scientist, created plans for an invisibility machine.",
       ];
       break;
 
